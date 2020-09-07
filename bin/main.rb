@@ -1,1 +1,3 @@
-# here is the main file in dev Here we would work on the project
+#!/usr/bin/env ruby
+require 'colorize'
+puts 'Hello World of Testing code'.colorize(:green)
