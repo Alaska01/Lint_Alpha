@@ -11,10 +11,9 @@
     margin::::: 50px; #multiple columns insted of One
   }
   
-  .test3 {} #Detects empty block if on a single line
+  .test3 {} #Detects empty block if on a single line.
   
   .test4 {
-    color: red;;;; #Multiple semi-columns insted of One
+    color: red;;;; #Multiple semi-columns insted of One.
   }
-
-  # rubocop:enable Lint/Syntax
+# rubocop:enable Lint/Syntax
