@@ -1,26 +1,29 @@
 require 'colorize'
-file = File.open(ARGV[0])
+# file = File.open(ARGV[0]).to_a
 
 class StylingRules
   attr_reader :error, :file
-  def initialize
+  
+  def initialize(file)
     @error = []
     @file = file
+    
   end
 
   def indentation(file)
-    file.each_with_index do |line, index|
-       if line.include? (";")
-         arr = line.scan(/./)
-         if arr[0] != " " || arr[1] != " " || arr[2] == " "
-           @error << "LINE #{index +1}: There is an indentation error, TWO spaces please"
-         end
-       end
-     end
-      @error
-   end
+   file.each_with_index do |line, index|
+      if line.include? (";")
+        
+        arr = line.scan(/./)
+        if arr[0] != " " || arr[1] != " " || arr[2] == " "
+          @error << "LINE #{index +1}: There is an indentation error, TWO spaces please"
+        end
+      end
+    end
+     @error
+  end
 
-   def multiple_semicolomn(file)
+  def multiple_semicolomn(file)
     file.each_with_index do |line, index|
       if line.include? (";")
         arr = line.scan(/./)
@@ -54,7 +57,7 @@ class StylingRules
             k += 1
         end
         if count > 1
-         @error << "LINE #{(index +1).to_s}: There are #{count.to_s} colomns, remove #{(count -1).to_s} please"
+         @error << "LINE #{(index +1)}: There are #{count} colomns, remove #{(count -1)} please"
         end
       end
     end
@@ -77,6 +80,18 @@ class StylingRules
     @error
   end
 
+  def indentation_1(file)
+    file.each_with_index do |line, index|
+      if line.include? (";")
+        arr = line.scan(/./)
+  
+        if arr[0] != " " || arr[1] != " "
+          @error << "Indent 1 wrong indentation on line #{index + 1} kindly ensure you have two spaces before the command"
+        end
+      end
+    end
+  end
+
   def error_message
     @error.each_with_index do |val, err|
       @error[err]
@@ -88,8 +103,5 @@ class StylingRules
     "Kudos, You did a great job removing all the error"
    end
  end
-
-
-
 
 end
