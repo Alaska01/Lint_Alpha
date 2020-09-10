@@ -23,7 +23,7 @@ This project is a CSS Linter that checks for various CSS errors such as multiple
 ![screenshot](./assets/goodcode.JPG)
  
  ## Bad Code
- ![screenshot](./assets/badcode.JPG)
+ ![screenshot](./assets/badcoding.JPG)
 
 
 
