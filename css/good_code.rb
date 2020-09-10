@@ -14,7 +14,7 @@
 
 .test2 {
   padding: 50px;
-  margin: 50px; 
+  margin: 50px;
 }
 
 .test3 {
@@ -23,5 +23,5 @@
 
 .test4 {
   color: red;
-
+}
 # rubocop:enable Lint/Syntax
