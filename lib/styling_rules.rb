@@ -60,6 +60,23 @@ class StylingRules
     end
   end
 
-  
+  def empty_block(file)
+    file.each_with_index do |line, index|
+      @error << "LINE #{index + 1}: Block is empty, block should not be empty please" if line.match(/{\n*}/)
+    end
+    @error
+  end
+
+  def opening_brace_space(file)
+    file.each_with_index do |line, index|
+      next unless line.include?('{') 
+      if line.match(/([a-zA-Z]+|\]|\)){/)
+        @error << "LINE #{index + 1}: Add a space before the opening brace please"
+      end
+    end
+    @error
+  end
+
+
 
 end
