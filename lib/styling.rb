@@ -32,7 +32,7 @@ class StylingRules
         count += 1 if arr[k] == ';'
         k += 1
       end
-      @error << "LINE #{(index + 1)}: There are #{count} semicolomns, remove #{(count - 1)} please" if count > 1
+      @error << "LINE #{(index + 1)}: There are #{count} semicolomns, remove #{count - 1} please" if count > 1
     end
   end
 
@@ -48,7 +48,7 @@ class StylingRules
         count += 1 if arr[k] == ':'
         k += 1
       end
-      @error << "LINE #{(index + 1)}: There are #{count} colomns, remove #{(count - 1)} please" if count > 1
+      @error << "LINE #{(index + 1)}: There are #{count} colomns, remove #{count - 1} please" if count > 1
     end
   end
 
