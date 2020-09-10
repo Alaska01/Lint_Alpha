@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# rubocop:disable Lint/ScriptPermission
+
 require 'colorize'
 require '../lib/styling.rb'
 require '../lib/messaging.rb'
@@ -19,5 +19,3 @@ puts new_testing.error_message
 puts new_testing.clear_message
 puts Messaging::DONE
 puts 'If you enjoyed using this Linter Kindly recommend it to a coleague'.blue if new_testing.clear_message
-
-# rubocop:enable Lint/ScriptPermission
