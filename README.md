@@ -14,34 +14,42 @@ This project is a CSS Linter that checks for various CSS errors such as multiple
 
 ## Rules Created for Alpha_Lint
 
-## Checks for Spacing before an openning curly brace
+- Checks for multiple semicolons on a single line throughout the code
+- Checks for multiple colons on a single line throughout the code
+- Checks empty block(s) on a single line in the code file throughout the code
+- Checks wrong code indentation throughout the code, among others.
 
 ## Good Code
-- test1 {
-  color: red;
-}
-
-- The player can make moves by pressing a number (of choice) on his/her keyboard
-- The position a player is choosing should not have been taking
-- The move made by a user should be a number otherwise its an invalid move
-- A player can win by making three consecutive moves vertically, horizontally or diagonally
-- If all position has been taken and there is no winner then its a tie(draw) For more detailed information on the game rules [CLICK HERE](https://www.thesprucecrafts.com/tic-tac-toe-game-rules-412170)
+![screenshot](./assets/goodcode.JPG)
+ 
+ ## Bad Code
+ ![screenshot](./assets/badcode.JPG)
 
 
 
 # Getting Started 🚀
 
-These instructions will get you a copy of the game up and running on your local machine.
+These instructions will get you a copy on how to get your Alphat_Lint running on your local machine to debug CSS code errors.
 
-## How To Use 🔧
+## How To Run Checks 🔧
 
 From your command line, first clone the project:  
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Alaska01/tic-tac-toe
-$ cd tic-tac-toe
+$ git clone https://github.com/Alaska01/Lint_Alpha.git
+$ cd Lint_Alpha
 $ cd bin/main
+# Go to the command line/terminal and type the following command
+$ ./main.rb '../css/good_code.rd'
+-OR
+$ ./main.rb '../css/bug.rd'
+
+# Running RSPEC Check
+- Use the following command to go a step backward into the root directory
+$ cd ..
+- Run the command
+$ rspec
 
 ```
 

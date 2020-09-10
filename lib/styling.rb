@@ -68,18 +68,6 @@ class StylingRules
     @error
   end
 
-  def indentation_1(file)
-    file.each_with_index do |line, index|
-      next unless line.include? ';'
-
-      arr = line.scan(/./)
-
-      if arr[0] != ' ' || arr[1] != ' '
-        @error << "Indent 1 wrong indentation on line #{index + 1} kindly ensure you have two spaces before the command"
-      end
-    end
-  end
-
   def error_message
     @error.each_with_index do |_val, err|
       @error[err]
