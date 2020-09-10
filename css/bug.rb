@@ -1,4 +1,4 @@
-# rubocop:disable Lint/Syntax
+# rubocop:disable Lint/Syntax:
 .test1{ #wrong close of openning curly brace
   color: red; #Wrong indentation with no space, two space required
    margin: 0; #Wrong indentation, only one space given, Two space required.
@@ -16,4 +16,4 @@
   .test4 {
     color: red;;;; #Multiple semi-columns insted of One.
   }
-# rubocop:enable Lint/Syntax
+# rubocop:enable Lint/Syntax:
