@@ -1,3 +1,4 @@
+# rubocop:disable Lint/Syntax:
 # The CSS codes below have proper opening curly braces
 # Proper Indentation of 2 spaces per attributes
 # No empty block on a single line.
@@ -22,4 +23,5 @@
 
 .test4 {
   color: red;
-}
+
+# rubocop:enable Lint/Syntax:
