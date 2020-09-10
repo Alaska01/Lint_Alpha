@@ -20,6 +20,26 @@ class StylingRules
       @error
    end
 
+   def multiple_semicolomn(file)
+    file.each_with_index do |line, index|
+      if line.include? (";")
+        arr = line.scan(/./)
+        arr.size
+        k = 0
+        count = 0
+        while k < arr.size
+              if arr[k] == ";"
+                  count += 1
+              end
+            k += 1
+        end
+        if count > 1
+         @error << "LINE #{(index +1).to_s}: There are #{count.to_s} semicolomns, remove #{(count -1).to_s} please"
+        end
+      end
+    end
+  end
+
 
 
 end
