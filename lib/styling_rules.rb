@@ -77,6 +77,19 @@ class StylingRules
     @error
   end
 
+  def error_message
+    @error.each_with_index do |val, err|
+      @error[err]
+    end
+  end
+
+  def clear_message
+   if @error == []
+    "Kudos, You did a great job removing all the error"
+   end
+ end
+
+
 
 
 end
