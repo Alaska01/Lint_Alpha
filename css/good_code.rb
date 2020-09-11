@@ -4,11 +4,15 @@
  /* Detects wrong number of semicolumns and columns on any given line. */
  /* The above are the cases covered in the test */
 
-.test1 {
+.test1{
   color: red; 
   margin: 0; 
   height: 9px; 
   width: 50px;
+}
+
+hh { 
+  
 }
 
 .test2 {
