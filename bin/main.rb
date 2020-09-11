@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+# !/usr/bin/env ruby
 
 require 'colorize'
 require '../lib/styling.rb'
@@ -13,6 +13,7 @@ puts
 new_testing.multiple_colomn(file)
 new_testing.multiple_semicolomn(file)
 new_testing.empty_block(file)
+new_testing.empty_block_on_line(file)
 new_testing.opening_brace_space(file)
 new_testing.indentation(file)
 puts new_testing.error_message

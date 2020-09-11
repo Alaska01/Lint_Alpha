@@ -38,8 +38,8 @@ From your command line, first clone the project:
 ```bash
 # Clone this repository
 $ git clone https://github.com/Alaska01/Lint_Alpha.git
-$ cd Lint_Alpha
-$ cd bin/main
+$ cd Lint_Alpha/
+$ cd bin/
 # Go to the command line/terminal and type the following command
 $ ./main.rb '../css/good_code.css'
 -OR
