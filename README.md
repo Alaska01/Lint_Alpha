@@ -43,6 +43,7 @@ From your command line, first clone the project:
 $ git clone https://github.com/Alaska01/Lint_Alpha.git
 $ cd Lint_Alpha/
 $ cd bin/
+-Before proceeding ensure that the main.rb file on LINE one is having no space for windows machines i.e change "# !/usr/bin/env" ruby to be "#!/usr/bin/env ruby" without a space between the hash or pound symbol and the exclamation mark symbol. Thanks.
 # Go to the command line/terminal and type the following command
 $ ./main.rb '../css/good_code.css'
 -OR
