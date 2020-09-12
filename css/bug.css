@@ -17,13 +17,13 @@
 }
 
 .test4 {
-  padding: 50px;: /* Semicolumn Column next to each other*/
+  padding: 50px;: /* Semicolumn and Column next to each other*/
   margin: 50px;
 }
  
 .test5 {
-  padding: 50px:;;;;; /* Multiple Semi-column next to each other*/
-  margin: 50px;::::: /* Multiple column next to each other*/
+  padding: 50px:;;;;; /* Multiple Semi-column next to each other as well as column and semicolumn next to each other*/
+  margin: 50px;::::: /* Multiple column next to each other as well as semicolumn and column next to each other*/
 }
 
 .test7 { 

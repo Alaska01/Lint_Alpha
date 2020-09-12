@@ -14,16 +14,17 @@ This project is a CSS Linter that checks for various CSS errors such as multiple
 
 ## Rules Created for Alpha_Lint
 
-- Checks for multiple semicolons on a single line throughout the code
-- Checks for multiple colons on a single line throughout the code
-- Checks empty block(s) on a single line in the code file throughout the code
-- Checks wrong code indentation throughout the code, among others.
+- Checks for multiple semicolumns on a single line throughout the code
+- Checks for multiple columns on a single line throughout the code
+- Checks empty block on a single line in the code file throughout the code
+- Checks wrong code indentation throughout the code within code blocks.
+- Checks wrong positioning of column and semicolumn side by side
 
 ## Good Code
 ![screenshot](./assets/goodcode.JPG)
  
  ## Bad Code
- ![screenshot](./assets/badcoding.JPG)
+ ![screenshot](./assets/badcodingpractice.JPG)
 
 
 
@@ -46,10 +47,11 @@ $ ./main.rb '../css/good_code.css'
 $ ./main.rb '../css/bug.css'
 
 # Running RSPEC Check
-- Use the following command to go a step backward into the root directory after running your tests cases
+- Use the following command to go a step backward into the root directory after running your tests cases for good_code.css and bug.css
 $ cd ..
 - Run the command rspec in the root directory.
 $ rspec
+- You may also want to watch the begenning part of the video for a graphical demonstration of running the test on rspec and testing codes. [Video Link Here](https://www.devdungeon.com/content/colorize-ruby-terminal-output)
 
 
 ## Author
