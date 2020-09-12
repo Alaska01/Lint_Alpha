@@ -1,0 +1,38 @@
+
+.test1 {
+  color: red;
+    margin: 0; /*Wrong indentation of code body, two space character needed*/
+  height: 9px;
+  width: 50px;
+  }
+
+.test2 {
+  padding: 50px;;; /*Multiple semicolumn on a line*/
+  margin: 50px;
+  }
+
+.test3 {
+  padding: 50px:; /* Column or semicolumn next to each other*/
+  margin: 50px;
+  }
+
+.test4 {
+  padding: 50px;: /* Semicolumn Column next to each other*/
+  margin: 50px;
+  }
+ 
+.test5 {
+  padding: 50px;;;;;;; /* Multiple Semi-column next to each other*/
+  margin: 50px;::::: /* Multiple column next to each other*/
+}
+
+.test6 { 
+  
+}
+
+.test7 { 
+  here; ;;; :::::: /* Multiple column next to each other*/
+  jame: :;;
+}
+
+.test8 {}
