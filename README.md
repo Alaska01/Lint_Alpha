@@ -9,7 +9,7 @@ This project is a CSS Linter that checks for various CSS errors such as multiple
 
 - RUBY
 
-[ONLINE VIDEO EXPLANING THE PROJECT](https://www.loom.com/share/cc99f6a5bf9c4013ac8093cd370eec0c)
+[ONLINE VIDEO EXPLANING THE PROJECT](https://www.loom.com/share/8d1a30d9177b4719bb394264f6e83610)
 
 
 ## Rules Created for Alpha_Lint
@@ -17,8 +17,8 @@ This project is a CSS Linter that checks for various CSS errors such as multiple
 - Checks for multiple semicolumns on a single line throughout the code
 - Checks for multiple columns on a single line throughout the code
 - Checks empty block on a single line in the code file throughout the code
-- Checks wrong code indentation throughout the code within code blocks.
-- Checks wrong positioning of column and semicolumn side by side
+- Checks wrong code indentation throughout the code within code blocks
+- Checks incorrect positioning of column and semicolumn side by side
 
 ## Good Code
 ![screenshot](./assets/goodcode.JPG)
@@ -51,7 +51,7 @@ $ ./main.rb '../css/bug.css'
 $ cd ..
 - Run the command rspec in the root directory.
 $ rspec
-- You may also want to watch the begenning part of the video for a graphical demonstration of running the test on rspec and testing codes. [Video Link Here](https://www.devdungeon.com/content/colorize-ruby-terminal-output)
+- You may also want to watch the video for a graphical demonstration of the above explanation. [Video Link Here](https://www.loom.com/share/7207996f411541858e7a26ef5efe2975)
 
 
 ## Author
