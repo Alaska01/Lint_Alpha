@@ -1,18 +1,37 @@
 
-.test1{ /*wrong close of openning curly brace*/
-  color: red; /*Wrong indentation with no space, two space required*/
-   margin: 0; /*Wrong indentation, only one space given, Two space required.*/
-     height: 9px; /*wrong indentation Three spaces given instead of Two space.*/
-    width: 50px;
+.test1 {
+  color: red;
+    margin: 0; /*Wrong indentation of code body, two space character needed*/
+  height: 9px;
+  width: 50px;
   }
-  
-  .test2 {
-    padding: 50px;;;;; /*Multiple semicolumns instead of One*/
-    margin::::: 50px; /*multiple columns insted of One*/
+
+.test2 {
+  padding: 50px;;; /*Multiple semicolumn on a line*/
+  margin: 50px;
   }
-  
-  .test3 {} /*Detects empty block if on a single line.*/
-  
-  .test4 {
-    color: red;;;; /*Multiple semi-columns insted of One.*/
+
+.test3 {
+  padding: 50px:; /* Column or semicolumn next to each other*/
+  margin: 50px;
   }
+
+.test4 {
+  padding: 50px;: /* Semicolumn Column next to each other*/
+  margin: 50px;
+  }
+ 
+.test5 {
+  padding: 50px:;;;;; /* Multiple Semi-column next to each other*/
+  margin: 50px;::::: /* Multiple column next to each other*/
+}
+
+.test6 { 
+  
+}
+
+.test7 { 
+  here; ;;; :::::: /* Multiple column next to each other*/
+}
+
+.test8 {}

@@ -46,9 +46,9 @@ $ ./main.rb '../css/good_code.css'
 $ ./main.rb '../css/bug.css'
 
 # Running RSPEC Check
-- Use the following command to go a step backward into the root directory
+- Use the following command to go a step backward into the root directory after running your tests cases
 $ cd ..
-- Run the command
+- Run the command rspec in the root directory.
 $ rspec
 
 

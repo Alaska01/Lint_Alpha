@@ -1,21 +1,20 @@
-# !/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 require 'colorize'
-require '../lib/styling.rb'
-require '../lib/messaging.rb'
+require_relative '../lib/styling.rb'
+require_relative '../lib/messaging.rb'
 file = File.open(ARGV.first).to_a
 new_testing = StylingRules.new(file)
 puts
 puts 'We are running a CSS Linter Experimental test on multiple columns, semicolumns, wrong indentation etc'.yellow
 puts 'Enjoy writing and testing CSS codes with Alpha-Lint'.green
 puts
-
-new_testing.multiple_colomn(file)
-new_testing.multiple_semicolomn(file)
-new_testing.empty_block(file)
-new_testing.empty_block_on_line(file)
-new_testing.opening_brace_space(file)
 new_testing.indentation(file)
+new_testing.multiple_semicolomn(file)
+new_testing.multiple_colomn(file)
+new_testing.colomn_semi_wrong_position(file)
+new_testing.multiple_colomn_semicolomn(file)
+new_testing.empty_block(file)
 puts new_testing.error_message
 puts new_testing.clear_message
 puts Messaging::DONE

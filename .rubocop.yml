@@ -48,3 +48,9 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
