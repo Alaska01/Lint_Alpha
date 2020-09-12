@@ -34,6 +34,8 @@ These instructions will get you a copy on how to get your Alphat_Lint running on
 
 ## How To Run Checks 🔧
 
+- You may also want to watch the video for a graphical demonstration how to run the code and avoid some errors on windows machine. [Video Link Here](https://www.loom.com/share/7207996f411541858e7a26ef5efe2975)
+
 From your command line, first clone the project:  
 
 ```bash
@@ -51,7 +53,7 @@ $ ./main.rb '../css/bug.css'
 $ cd ..
 - Run the command rspec in the root directory.
 $ rspec
-- You may also want to watch the video for a graphical demonstration of the above explanation. [Video Link Here](https://www.loom.com/share/7207996f411541858e7a26ef5efe2975)
+
 
 
 ## Author
