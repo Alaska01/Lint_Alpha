@@ -1,4 +1,4 @@
-require_relative '../lib/styling'
+require_relative '../lib/styles/styling'
 describe StylingRules do
   let(:stylingrules) { StylingRules.new('../css/test_bug.css') }
   let(:clearing_msg) { stylingrules.clear_message }

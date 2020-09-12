@@ -1,8 +1,8 @@
 # !/usr/bin/env ruby
 
 require 'colorize'
-require_relative '../lib/styling.rb'
-require_relative '../lib/messaging.rb'
+require_relative '../lib/styles/styling.rb'
+require_relative '../lib/message/messaging.rb'
 file = File.open(ARGV.first).to_a
 new_testing = StylingRules.new(file)
 puts
